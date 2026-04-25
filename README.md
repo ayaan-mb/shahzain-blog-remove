@@ -1,6 +1,9 @@
 # Blog Post Remover (Plugin Source)
 
-If WordPress shows **"The package could not be installed"**, you are likely uploading the repository ZIP instead of the plugin ZIP.
+If WordPress shows **"The package could not be installed"**, it is usually one of these:
+
+1. You uploaded a source/repository ZIP instead of the plugin package ZIP.
+2. The plugin folder already exists on the server.
 
 ## Correct install steps
 
@@ -11,6 +14,12 @@ If WordPress shows **"The package could not be installed"**, you are likely uplo
 2. Upload the generated file:
    - `blog-post-remover.zip`
    - in **WordPress Admin > Plugins > Add New > Upload Plugin**
+
+## Quick troubleshooting
+
+- If WordPress says destination exists, remove the old folder first:
+  - `wp-content/plugins/blog-post-remover/`
+- If you must upload the repository ZIP directly, this repo also includes a root plugin bootstrap (`blog-post-remover.php`) so WordPress can detect the plugin during install.
 
 ## Why this matters
 
