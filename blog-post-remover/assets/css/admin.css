@@ -1,0 +1,38 @@
+.bpr-wrap {
+	max-width: 760px;
+}
+
+.bpr-warning {
+	margin-top: 16px;
+}
+
+.button.button-danger {
+	background: #b32d2e;
+	border-color: #8a2424;
+	color: #fff;
+}
+
+.button.button-danger:hover,
+.button.button-danger:focus {
+	background: #8a2424;
+	border-color: #6f1d1e;
+	color: #fff;
+}
+
+.button.button-danger:disabled,
+.button.button-danger[disabled] {
+	background: #b32d2e;
+	border-color: #8a2424;
+	color: #fff;
+	opacity: 0.55;
+	cursor: not-allowed;
+}
+
+.bpr-progress {
+	margin-top: 12px;
+	font-weight: 600;
+}
+
+.bpr-progress.bpr-error {
+	color: #b32d2e;
+}
